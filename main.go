@@ -1,14 +1,14 @@
 package main
 
 import (
-	"tide/src"
+	"github.com/voIatiIe/tidewave/cmd/config"
+	"github.com/voIatiIe/tidewave/cmd/node"
 )
 
-
 func main() {
-	config := src.ParseCommandLine()
+	config := config.ParseCommandLine()
 
-	node := src.NewNode(config)
+	node := node.NewNode(&config)
 	node.Start()
 	node.AwaitShutdown()
 }

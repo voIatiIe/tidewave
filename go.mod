@@ -1,4 +1,4 @@
-module tide
+module github.com/voIatiIe/tidewave
 
 go 1.21
 
